@@ -2,9 +2,9 @@
 
 ![Logo](./ProjetoEcoCycle/wwwroot/img/EcoCycle_Dark.webp)
 
-**O README oficial do site da EcoCycle!**
+**𝗢 𝗥𝗘𝗔𝗗𝗠𝗘 𝗢𝗙𝗜𝗖𝗜𝗔𝗟 𝗗𝗢 𝗦𝗜𝗧𝗘 𝗗𝗔 𝗘𝗖𝗢𝗖𝗬𝗖𝗟𝗘!**
 
-Sejam todos muito bem-vindos ao README de nosso site da EcoCycle, que também envolve nosso projeto de sustentabilidade, um site criado com propósito de auxiliar o entendimento dele, e implementar um sistema de MVC, além de ter  educacional graças à Rede SENAI, para desenvolver e aplicar nossas habilidades em um projeto real que busca facilitar o acesso à terapia com o uso da tecnologia. Durante o desenvolvimento do PsyquIA, estamos aperfeiçoando diversas competências essenciais, como:
+Sejam todos muito bem-vindos ao README de nosso site da EcoCycle, que também envolve nosso projeto de sustentabilidade, este site foi criado com o propósito de auxiliar no entendimento dele, e implementar um sistema de MVC, além de fazer parte de um processo educacional graças à rede SENAI, para desenvolver e aplicar nossas habilidades em um projeto real que busca facilitar o acesso e uso de uma reciclagem automática com o uso da tecnologia. Durante o desenvolvimento da EcoCycle, estamos aperfeiçoando diversas competências essenciais, como:
 
 • Trabalho em equipe e colaboração;
 
@@ -12,7 +12,7 @@ Sejam todos muito bem-vindos ao README de nosso site da EcoCycle, que também en
 
 • Capacidade de resolver problemas reais;
 
-• Desenvolvimento de habilidades em: JS, HTML, CSS, Figma, etc.
+• Desenvolvimento de habilidades em: JS, HTML, BootStrap, Figma, e principalmente MVC.
 
 
 **🖌️ Sinta-se livre para analisar nossa estrutura! ⇨**
@@ -22,13 +22,13 @@ Sejam todos muito bem-vindos ao README de nosso site da EcoCycle, que também en
 
 ## 🎯 Objetivo do Projeto 📌
 
-O projeto PsyquIA tem como principal objetivo tornar o acesso à terapia mais simples, rápido e eficaz por meio da tecnologia. A ideia é conectar pacientes a psicólogos de forma prática e personalizada, com o auxílio de inteligência artificial, filtros de busca avançados e um sistema de atendimento intuitivo.
+O nosso projeto EcoCycle tem como principal objetivo facilitar as formas de reciclagens e produção, para assim se tornarem mais sustentáveis. Nós buscamos reaproveitar recursos e diminuir a emissão de poluentes. Este site também apresenta um sistema de MVC, para deixar o entendimento de nosso projeto de forma mais clara e objetiva.
 
-Nosso foco está em criar uma experiência acolhedora e acessível, com ferramentas que permitam desde recomendações de profissionais até suporte emocional com nossa IA treinada, tudo dentro de uma plataforma moderna, funcional e pensada para todos.
+Nosso foco está em criar uma máquina que faz a triagem automática de lixos recicláveis e orgânicos, e com o MVC será possível organizar tudo de forma mais fácil além de mostrar, por exemplo, todo o processo que ocorre com os produtos reciclados ou tratados. Tudo dentro de uma plataforma moderna, funcional e pensada para todos.
 
 **💪 Você pode ver todo o processo desafiador que nossa equipe passou para desenvolver as funcionalidades do site aqui** ⇨ [Clickup](https://app.clickup.com/9013984720/v/l/6-901309792828-1?pr=90134050405)
 
-![ClickUp](./img/02ZXQZp6gXHTbVLJm5jLX0g-1.webp)
+![ClickUp](./ProjetoEcoCycle/wwwroot/img/imagesclickup.png)
 ---
 
 ## ⚡ Os Grandes Problemas Mentais
