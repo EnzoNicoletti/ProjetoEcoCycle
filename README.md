@@ -32,39 +32,35 @@ Nosso foco está em criar uma máquina que faz a triagem automática de lixos re
 ---
 
 ## ⚡ Os Grandes Problemas Mentais
-Atualmente, milhares de pessoas sofrem com transtornos mentais, e que vem aumentando significativamente com o passar dos anos. Tais como: Ansiedade, Depressão, Estresse crônico, Síndrome do pânico, Transtornos alimentares, Baixa autoestima, Solidão e dificuldade de se abrir com alguém, Atraso Mental, etc...
 
-Muitos enfrentam esses desafios sem suporte adequado, seja por falta de acesso, tempo, dinheiro ou simplesmente medo/vergonha de buscar ajuda.
+Atualmente, milhares de cidades sofrem com o descarte incorreto de resíduos, um problema que vem crescendo significativamente com o passar dos anos. Entre os principais impactos estão: poluição do solo e da água, acúmulo de lixo em áreas urbanas, aumento do descarte irregular, desperdício de materiais recicláveis, enchentes causadas por bueiros entupidos e riscos à saúde da população.
 
+Muitas pessoas e empresas enfrentam esses desafios sem suporte adequado, seja por falta de informação, acesso, tempo, incentivo ou até mesmo por não saberem como descartar corretamente seus resíduos.
 ---
 
-## 💡O Que a PsyquIA oferece Para Ajudar 🧠
+## 💡O Que a EcoCycle oferece Para Ajudar 🧠
 
-Nosso projeto foi criado com o objetivo de aproximar as pessoas dos cuidados com a saúde mental. Para isso, o PsyquIA oferece:
+A EcoCycle foi criada com o objetivo de facilitar o descarte correto de resíduos e incentivar práticas mais sustentáveis no dia a dia da população. Por meio da informação e da conscientização, a EcoCycle oferece:
 
-🔍 Recomendação inteligente de psicólogos: O site sugere profissionais com base no perfil do paciente e nas especialidades necessárias.
-
-📅 Sistema de agendamento de consultas: Consultas presenciais ou online, com praticidade e segurança.
-
-🤖 Suporte emocional com IA: Um assistente virtual que acolhe, orienta e ajuda o paciente até o atendimento com o psicólogo.
+Identificação inteligente de resíduos: O sistema orienta o usuário sobre como e onde descartar corretamente cada tipo de material.
 
 🌐 Acessibilidade: Interface pensada para todos os públicos.
 
-⭐ Benefícios VIP: Recursos exclusivos para quem quiser uma experiência mais completa.
+🔒 Compromisso com a responsabilidade ambiental: Foco total na redução de impactos ao meio ambiente e na valorização da reciclagem.
 
 🔒 Segurança dos dados: Proteção e privacidade garantidas para todos os usuários.
 
-😁 Nosso foco é tornar o cuidado com a saúde mental algo acessível, empático e moderno.
+😁 Possibilidades de tornar o descarte consciente algo simples, acessível e parte da rotina de todos.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 Este projeto foi desenvolvido com:
 
-- Visual Studio Code
+- Visual Studio 2022
 - Códigos em JS
 - Estrutura semântica no **Figma** e **HTML5**
-- Estilização com **CSS3**
+- Estilização com **Bootstrap**
 - Layouts responsivos para diferentes tamanhos de tela
 - Organização visual e intuitiva para o usuário
 
@@ -72,14 +68,14 @@ Este projeto foi desenvolvido com:
 
 # 💥 Veja Nosso Site Completo 🔥
 Você pode ver como ficou nosso site completo aqui!
-[PsyquIA](https://michelacre.github.io/PsyquIA/)
+[EcoCycle](https://michelacre.github.io/PsyquIA/)
 ---
 
 ## 📋 Feedback
 
 Se você tiver algum feedback, por favor nos deixe saber!
 
-Nosso Email para contatos é: psyquiaofficial@gmail.com
+Nosso Email para contatos é: EcoCycleOfficial@gmail.com
 
 Sua opinião é de extrema importância e nos motiva a melhorar cada vez mais ❤️
 
@@ -100,4 +96,4 @@ Sua opinião é de extrema importância e nos motiva a melhorar cada vez mais �
 
 ---
 
-#PsyquIA #Psicologia #SENAI #ProblemasMentais #SiteAplicativo
+#EcoCycle #Reciclagem #SENAI #ProblemasAmbientais #Site #Projeto
