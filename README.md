@@ -31,11 +31,11 @@ Nosso foco está em criar uma máquina que faz a triagem automática de lixos re
 ![ClickUp](./ProjetoEcoCycle/wwwroot/img/imagesclickup.png)
 ---
 
-## ⚡ Os Grandes Problemas Mentais
+## ⚡ Os Grandes Problemas Ambientais
 
 Atualmente, milhares de cidades sofrem com o descarte incorreto de resíduos, um problema que vem crescendo significativamente com o passar dos anos. Entre os principais impactos estão: poluição do solo e da água, acúmulo de lixo em áreas urbanas, aumento do descarte irregular, desperdício de materiais recicláveis, enchentes causadas por bueiros entupidos e riscos à saúde da população.
-
 Muitas pessoas e empresas enfrentam esses desafios sem suporte adequado, seja por falta de informação, acesso, tempo, incentivo ou até mesmo por não saberem como descartar corretamente seus resíduos.
+
 ---
 
 ## 💡O Que a EcoCycle oferece Para Ajudar 🧠
