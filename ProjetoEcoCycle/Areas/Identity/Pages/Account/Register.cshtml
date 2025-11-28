@@ -4,12 +4,13 @@
     ViewData["Title"] = "Cadastrar";
 }
 
-<div class="card" style="width: 400px;">
+<div class="card mx-auto" style="width: 400px;">
     <div class="card-body">
         <div class="text-center">
             <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
                 <h2>EcoCycle</h2>
-                <hr />
+                <hr class="col-5 mx-auto" />
+                <p>Cuidar do planeta é nosso ciclo</p>
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                 <div class="form-floating mb-2">
                     <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
@@ -26,8 +27,8 @@
                     <label asp-for="Input.ConfirmPassword">Confirm Password</label>
                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                 </div>
-                <a href="" class="text-decoration-underline text-secondary">Já possui uma conta? Clique aqui</a>
                 <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-dark mt-2 mb-2">Continuar</button>
+                <a class="text-decoration-underline text-secondary">Já possui uma conta? Clique aqui</a>
                 <div class="d-flex justify-content-center">
                     <hr class="col-5 text-secondary" /><p class="text-secondary ms-4 me-4 py-1"> ou </p><hr class="col-5 text-secondary" />
                 </div>
