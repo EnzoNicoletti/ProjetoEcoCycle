@@ -76,7 +76,7 @@ Você pode ver como ficou nosso site completo aqui!
 
 Se você tiver algum feedback, por favor nos deixe saber!
 
-Nosso Email para contatos é: EcoCycleOfficial@gmail.com
+Nosso Email para contatos é: EcoCycle@gmail.com
 
 Sua opinião é de extrema importância e nos motiva a melhorar cada vez mais ❤️
 
