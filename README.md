@@ -1,7 +1,7 @@
 # ♻️ Projeto EcoCycle.
 
 **O README oficial do site da EcoClyce!**
-![Logo](./img/EcoCycle_Dark.webp)
+![Logo](./ProjetoEcoCycle/wwwroot/img/EcoCycle_Dark.webp)
 
 Sejam todos muito bem-vindos ao README de nosso site que envolve nosso projeto de sustentabilidade, um site criado com propósito educacional graças à Rede SENAI, para desenvolver e aplicar nossas habilidades em um projeto real que busca facilitar o acesso à terapia com o uso da tecnologia. Durante o desenvolvimento do PsyquIA, estamos aperfeiçoando diversas competências essenciais, como:
 
