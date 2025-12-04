@@ -67,3 +67,7 @@ body {
         margin-right: 0;
     }
 }
+
+.justificado {
+    text-align: justify;
+}
