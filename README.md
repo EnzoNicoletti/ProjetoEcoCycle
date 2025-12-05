@@ -90,7 +90,7 @@ Sua opinião é de extrema importância e nos motiva a melhorar cada vez mais �
 
 - [@biel-365](https://github.com/biel-365)
 
-- [Luan-Galera](https://github.com/Luan-Galera)
+- [@Luan-Galera](https://github.com/Luan-Galera)
 
 **Orientadores:**
 
