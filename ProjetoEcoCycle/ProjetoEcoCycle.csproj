@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\img\bgInformacoes.webp" />
+    <Content Remove="wwwroot\img\bgLocais.webp" />
+    <Content Remove="wwwroot\img\bgProdutos.webp" />
+    <Content Remove="wwwroot\img\bgServicos.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Views\Index.html" />
   </ItemGroup>
 
