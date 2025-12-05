@@ -39,7 +39,7 @@ Muitas pessoas e empresas enfrentam esses desafios sem suporte adequado, seja po
 
 ---
 
-## 💡O Que a EcoCycle oferece Para Ajudar 🧠
+## 💡O Que a EcoCycle oferece Para Ajudar 🌳
 
 A EcoCycle foi criada com o objetivo de facilitar o descarte correto de resíduos e incentivar práticas mais sustentáveis no dia a dia da população. Por meio da informação e da conscientização, a EcoCycle oferece:
 
