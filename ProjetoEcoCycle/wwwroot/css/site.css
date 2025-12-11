@@ -85,13 +85,23 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+footer.rodape.footer {
+    position: static;
+}
+
 .rodape {
     background-color: #2C3E50;
-    position: relative;
 }
 
 .footer-line {
     width: 250px;
+    height: 5px;
+    background: #EFF8D3;
+    margin: 0;
+}
+
+.footer-line-mobile {
+    width: 170px;
     height: 5px;
     background: #EFF8D3;
     margin: 0;
@@ -155,8 +165,4 @@ body {
 
 .cooperadores {
     background-color: #1ABC9C;
-}
-
-.margin-end {
-    margin-bottom: 90px;
 }
