@@ -11,104 +11,67 @@
 	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/ProjetoEcoCycle.styles.css" asp-append-version="true" />
 </head>
-<body class="d-flex flex-column min-vh-100 mb-0">
-	<header>
-		<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow sticky-top">
-			<div class="container-fluid">
-				<div class="justify-content-center align-items-center mx-2">
-					<a class="navbar-brand fs-1 fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
-						<img src="~/img/ecocycle light logo.png" alt="Logo" width="auto" height="50" class="d-inline-block align-text-top">
-						<span style="color: #0DFF5E">Eco</span><span style="color: #9EE5FF">Cycle</span>
-					</a>
-					<p>Cuidar do planeta é o nosso ciclo.</p>
+
+@{
+	var bodyClass = ViewData["BodyClass"] ?? "";
+	bool hideHeaderFooter = (ViewData["HideHeaderFooter"] as bool?) ?? false;
+}
+
+<body class="d-flex flex-column min-vh-100 mb-0 @bodyClass">
+	@if (!hideHeaderFooter)
+	{
+		<header>
+			<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow sticky-top">
+				<div class="container-fluid">
+					<div class="justify-content-center align-items-center mx-2">
+						<a class="navbar-brand fs-1 fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
+							<img src="~/img/ecocycle light logo.png" alt="Logo" width="auto" height="50" class="d-inline-block align-text-top">
+							<span style="color: #0DFF5E">Eco</span><span style="color: #9EE5FF">Cycle</span>
+						</a>
+						<p>Cuidar do planeta é o nosso ciclo.</p>
+					</div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+						<ul class="navbar-nav flex-grow-1 d-none d-md-flex">
+							<li class="nav-item">
+								<a class="btn btn-outline-dark mx-md-1 mx-3 rounded-3" asp-area="" asp-controller="Home" asp-action="Processos"><i class="bi bi-heart"></i> Sobre</a>
+							</li>
+							<li class="nav-item">
+								<a class="btn btn-outline-dark mx-md-1 mx-3 rounded-3" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="bi bi-person"></i> Equipe</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav flex-grow-1 d-flex d-md-none flex-row justify-content-center">
+							<li class="nav-item">
+								<a class="btn btn-outline-dark mx-md-1 mx-3 rounded-3" asp-area="" asp-controller="Home" asp-action="Processos"><i class="bi bi-heart"></i> Sobre</a>
+							</li>
+							<li class="nav-item">
+								<a class="btn btn-outline-dark mx-md-1 mx-3 rounded-3" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="bi bi-person"></i> Equipe</a>
+							</li>
+						</ul>
+						<partial name="_LoginPartial" />
+					</div>
 				</div>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-					<ul class="navbar-nav flex-grow-1 d-none d-md-flex">
-						<li class="nav-item">
-							<a class="btn btn-outline-dark mx-md-1 mx-3 rounded-3" asp-area="" asp-controller="Home" asp-action="Processos"><i class="bi bi-heart"></i> Sobre</a>
-						</li>
-						<li class="nav-item">
-							<a class="btn btn-outline-dark mx-md-1 mx-3 rounded-3" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="bi bi-person"></i> Equipe</a>
-						</li>
-					</ul>
-					<ul class="navbar-nav flex-grow-1 d-flex d-md-none flex-row justify-content-center">
-						<li class="nav-item">
-							<a class="btn btn-outline-dark mx-md-1 mx-3 rounded-3" asp-area="" asp-controller="Home" asp-action="Processos"><i class="bi bi-heart"></i> Sobre</a>
-						</li>
-						<li class="nav-item">
-							<a class="btn btn-outline-dark mx-md-1 mx-3 rounded-3" asp-area="" asp-controller="Home" asp-action="Privacy"><i class="bi bi-person"></i> Equipe</a>
-						</li>
-					</ul>
-					<partial name="_LoginPartial" />
-				</div>
-			</div>
-		</nav>
-	</header>
+			</nav>
+		</header>
+	}
+
 	<div class="">
 		<main role="main" class="flex-grow-1">
 			@RenderBody()
 		</main>
 	</div>
 
-	<footer class="rodape border-top footer text-light row mx-0 d-none d-md-flex">
-		<div class="border-end d-flex flex-column col-3 text-center align-items-center justify-content-center mx-0 lh-1 p-0">
-			<p class="mt-2 fw-bold" style=" font-size: 3em"><span style="color: #0DFF5E">Eco</span><span style="color: #9EE5FF">Cycle</span></p>
-			<div class="footer-line mx-auto"></div>
-			<p class="footer-subtitle my-2">Cuidar do planeta é nosso ciclo</p>
-			<ul class="list-inline fs-1 d-flex gap-5 text-center justify-content-center mt-2">
-				<li>
-					<a class="list-inline-item text-light " href=""><i class="bi bi-facebook"></i></a>
-				</li>
-				<li>
-					<a class="list-inline-item text-light" href=""><i class="bi bi-instagram"></i></a>
-				</li>
-				<li>
-					<a class="list-inline-item text-light" href=""><i class="bi bi-linkedin"></i></a>
-				</li>
-			</ul>
-		</div>
-		<div class="col-9 p-0">
-			<div class="fw-bold fs-5 justify-content-around w-100 text-center">
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Serviços</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Locais</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Colaboradores</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Produto</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Processos">Descartes</a>
-			</div>
-			<div class="footer-line2 mx-0 my-0"></div>
-			<div class="row text-center lh-1 mx-0">
-				<div class="col-10 border-end d-flex flex-column justify-content-between p-0 m-0">
-					<h4 class="mt-2 mb-1">Gostaria de voltar para algum desses locais? Clique nos botões acima!</h4>
-					<p style="padding: 1.25px" class="fw-bold mt-5 mb-0">Copyright © 2025 - EcoCycle | Todos os direitos reservados.</p>
-				</div>
-
-				<div class="col-2 d-flex flex-column align-items-center justify-content-between p-0 m-0  lh-1">
-					<i class="bi bi-whatsapp fs-1 mb-0 mt-2"></i>
-					<p class="contato fs-5 m-0">Nosso Whatsapp:</p>
-					<p class="contato fs-6 m-0">(+55)1499851-7312</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<footer class="rodape border-top footer text-light row m-0 d-md-none d-flex">
-		<div class="border-end border-bottom d-flex flex-column col-6 text-center align-items-center justify-content-center mx-0 lh-1 p-0">
-			<p class="mt-2 fw-bold" style=" font-size: 2.5em"><span style="color: #0DFF5E">Eco</span><span style="color: #9EE5FF">Cycle</span></p>
-			<div class="footer-line-mobile mx-auto"></div>
-			<p class="footer-subtitle my-2">Cuidar do planeta é nosso ciclo</p>
-		</div>
-		<div class="col-6 d-flex border-bottom flex-column align-items-center justify-content-between p-0 m-0  lh-1">
-			<i class="bi bi-whatsapp mt-2" style="font-size: 4em;"></i>
-			<p class="contato fs-5 mb-2">Comunique-nos!</p>
-		</div>
-		<div class="col-12">
-			<div class="row d-flex flex-nowrap">
-				<p class="col-4 fw-medium fs-3">Siga-nos:</p>
-				<ul class="col-8 list-inline fs-1 d-flex gap-3 text-center justify-content-start">
+	@if (!hideHeaderFooter)
+	{
+		<footer class="rodape border-top footer text-light row mx-0 d-none d-md-flex">
+			<div class="border-end d-flex flex-column col-3 text-center align-items-center justify-content-center mx-0 lh-1 p-0">
+				<p class="mt-2 fw-bold" style=" font-size: 3em"><span style="color: #0DFF5E">Eco</span><span style="color: #9EE5FF">Cycle</span></p>
+				<div class="footer-line mx-auto"></div>
+				<p class="footer-subtitle my-2">Cuidar do planeta é nosso ciclo</p>
+				<ul class="list-inline fs-1 d-flex gap-5 text-center justify-content-center mt-2">
 					<li>
 						<a class="list-inline-item text-light " href=""><i class="bi bi-facebook"></i></a>
 					</li>
@@ -120,17 +83,67 @@
 					</li>
 				</ul>
 			</div>
-			<div class="fw-bold fs-5 justify-content-center w-100 text-center d-flex flex-wrap">
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Serviços</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Locais</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Colaboradores</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Produto</a>
-				<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Processos">Descartes</a>
+			<div class="col-9 p-0">
+				<div class="fw-bold fs-5 justify-content-around w-100 text-center">
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Serviços</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Locais</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Colaboradores</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Produto</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Processos">Descartes</a>
+				</div>
+				<div class="footer-line2 mx-0 my-0"></div>
+				<div class="row text-center lh-1 mx-0">
+					<div class="col-10 border-end d-flex flex-column justify-content-between p-0 m-0">
+						<h4 class="mt-2 mb-1">Gostaria de voltar para algum desses locais? Clique nos botões acima!</h4>
+						<p style="padding: 1.25px" class="fw-bold mt-5 mb-0">Copyright © 2025 - EcoCycle | Todos os direitos reservados.</p>
+					</div>
+
+					<div class="col-2 d-flex flex-column align-items-center justify-content-between p-0 m-0  lh-1">
+						<i class="bi bi-whatsapp fs-1 mb-0 mt-2"></i>
+						<p class="contato fs-5 m-0">Nosso Whatsapp:</p>
+						<p class="contato fs-6 m-0">(+55)1499851-7312</p>
+					</div>
+				</div>
 			</div>
-			<p style="" class="fw-bold mt-2 mb-0 text-center mx-0">Copyright © 2025 - EcoCycle | Todos os direitos reservados.</p>
-		</div>
-	</footer>
+		</footer>
+		<footer class="rodape border-top footer text-light row m-0 d-md-none d-flex">
+			<div class="border-end border-bottom d-flex flex-column col-6 text-center align-items-center justify-content-center mx-0 lh-1 p-0">
+				<p class="mt-2 fw-bold" style=" font-size: 2.5em"><span style="color: #0DFF5E">Eco</span><span style="color: #9EE5FF">Cycle</span></p>
+				<div class="footer-line-mobile mx-auto"></div>
+				<p class="footer-subtitle my-2">Cuidar do planeta é nosso ciclo</p>
+			</div>
+			<div class="col-6 d-flex border-bottom flex-column align-items-center justify-content-between p-0 m-0  lh-1">
+				<i class="bi bi-whatsapp mt-2" style="font-size: 4em;"></i>
+				<p class="contato fs-5 mb-2">Comunique-nos!</p>
+			</div>
+			<div class="col-12">
+				<div class="row d-flex flex-nowrap">
+					<p class="col-4 fw-medium fs-3">Siga-nos:</p>
+					<ul class="col-8 list-inline fs-1 d-flex gap-3 text-center justify-content-start">
+						<li>
+							<a class="list-inline-item text-light " href=""><i class="bi bi-facebook"></i></a>
+						</li>
+						<li>
+							<a class="list-inline-item text-light" href=""><i class="bi bi-instagram"></i></a>
+						</li>
+						<li>
+							<a class="list-inline-item text-light" href=""><i class="bi bi-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+				<div class="fw-bold fs-5 justify-content-center w-100 text-center d-flex flex-wrap">
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Serviços</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Locais</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Colaboradores</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Index">Produto</a>
+					<a class="text-light opacity-50 mx-3" asp-area="" asp-controller="Home" asp-action="Processos">Descartes</a>
+				</div>
+				<p style="" class="fw-bold mt-2 mb-0 text-center mx-0">Copyright © 2025 - EcoCycle | Todos os direitos reservados.</p>
+			</div>
+		</footer>
+	}
 	<script src="~/lib/jquery/dist/jquery.min.js"></script>
 	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="~/js/site.js" asp-append-version="true"></script>
