@@ -1,8 +1,75 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Início - EcoCycle";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center hero-banner w-100 d-flex row text-light mx-0 mb-5">
+	<h1 class="display-4 fw-bold">Quem somos</h1>
+	<div class="mb-3 text-light col-md-6">
+		<div class="glass-card p-4">
+			Fundada em 2025, EcoCycle é uma startup de tecnologia sustentável que desenvolve
+			equipamentos inteligentes para gestão de resíduos. Nossa missão é transformar o
+			descarte urbano em valor econômico, social e ambiental, fechando o ciclo da
+			sustentabilidade. Atuamos na separação, tratamento e reaproveitamento de materiais
+			recicláveis e orgânicos, criando insumos para cooperativas e energia limpa para o futuro.
+		</div>
+	</div>
+	<div class="border-light mb-3 text-light col-md-6 mb-5">
+		<div class="glass-card p-4">
+			Unindo reciclagem, tecnologia e sustentabilidade, a EcoCycle tem grande destaque na
+			área de indústrias e comércios e um comprometimento para clientes em todo o Brasil.
+		</div>
+		<div class="text-center mt-4">
+			<a class="btn btn-info btn-lg rounded-pill px-4 text-light border-light" asp-area="" asp-controller="Home" asp-action="Processos">
+				Saiba mais
+			</a>
+		</div>
+	</div>
+</div>
+<div style="background-color: #007bff;" class="text-center w-100 mx-0 text-light pb-5 pt-1 bg-informacoes mb-5">
+	<h1>O que nós oferecemos</h1>
+	<div class="btn-group-vertical gap-3 w-50">
+		<a class="text-light btn btn-black rounded-pill border-black position-relative bg-servicos" asp-area="" asp-controller="Home" asp-action="Processos"><i class="bi bi-wrench-adjustable position-absolute top-50 start-0 translate-middle-y ms-3"></i> Serviços <i class="bi bi-wrench-adjustable position-absolute top-50 end-0 translate-middle-y me-3 d-md-none d-block"></i></a>
+		<a class="text-light btn btn-black rounded-pill border-black position-relative bg-produtos"><i class="bi bi-gear-wide-connected position-absolute top-50 start-0 translate-middle-y ms-3"></i> Produtos <i class="bi bi-gear-wide-connected position-absolute top-50 end-0 translate-middle-y me-3 d-md-none d-block"></i></a>
+		<a class="text-light btn btn-black rounded-pill border-black position-relative bg-locais"><i class="bi bi-building position-absolute top-50 start-0 translate-middle-y ms-3"></i> Locais <i class="bi bi-building position-absolute top-50 end-0 translate-middle-y me-3 d-md-none d-block"></i></a>
+	</div>
+</div>
+
+<h1 class="text-center">Nossos Cooperadores</h1>
+<div class="cooperadores margin-end row mt-5 justify-content-around p-0 mx-0">
+	<div class="row text-light m-md-5 mx-0 mt-2 align-items-center col-4 col-md-12">
+		<div class="text-center col-md-3 col-12">
+			<img style="width: 100px; height: 100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxbLHLSMS2yRqH_Mjo8uisMeG8jw5x-PPeQ&s" alt="Jaú Shopping" class="rounded-4 border-black d-md-none d-block text-center mx-auto" />
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxbLHLSMS2yRqH_Mjo8uisMeG8jw5x-PPeQ&s" alt="Jaú Shopping" class="rounded-4 border-black d-none d-md-block mx-auto" />
+			<p class="fw-medium fs-5 mt-2">Jaú Shopping</p>
+		</div>
+		<div class="col-9">
+			<p class="fw-medium fs-4 d-none d-md-block">
+				O Jaú Shopping tem o prazer de trabalhar com a EcoCycle, empresa referência em soluções tecnológicas voltadas para a coleta de resíduos de forma consciente e sustentável. Essa iniciativa reforça o compromisso do shopping com a responsabilidade socioambiental, alinhando-se a práticas que promovem não apenas o bem-estar da comunidade, mas também o cuidado com o futuro do nosso planeta.
+			</p>
+		</div>
+	</div>
+	<div class="row text-light mx-md-5 mt-md-0 mt-2 mx-0 align-items-center col-4 col-md-12">
+		<div class="text-center col-md-3 col-12">
+			<img style="width: 100px; height: 100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHVhzZoWRUMfGJeQ_aLTIGD4IfKARhrwCVBQ&s" alt="Jaú Serve" class="rounded-4 border-black d-md-none d-block mx-auto" />
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHVhzZoWRUMfGJeQ_aLTIGD4IfKARhrwCVBQ&s" alt="Jaú Serve" class="rounded-4 border-black d-none d-md-block mx-auto" />
+			<p class="fw-medium fs-5 mt-2">Jaú Serve</p>
+		</div>
+		<div class="col-9">
+			<p class="fw-medium fs-4 d-none d-md-block">
+				A Eco Brasil tem o orgulho de anunciar sua parceria com a EcoCycle, organização que se destaca pela aplicação de tecnologia em processos de coleta consciente de resíduos. Essa união fortalece o compromisso da nossa empresa com a inovação sustentável e com a busca constante por soluções que transformem desafios ambientais em oportunidades para gerar energia limpa e renovável.
+			</p>
+		</div>
+	</div>
+	<div class="row text-light m-md-5 mb-md-2 mt-2 mt-md-5 mx-0 align-items-center col-4 col-md-12">
+		<div class="text-center col-md-3 col-12">
+			<img style="width: 100px; height: 100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrhg2r-cgp-GfKBuHD3l-RidCVoFPZOU4NEg&s" alt="Eco Brasil" class="rounded-4 border-black d-md-none d-block mx-auto" />
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrhg2r-cgp-GfKBuHD3l-RidCVoFPZOU4NEg&s" alt="Eco Brasil" class="rounded-4 border-black d-none d-md-block mx-auto" />
+			<p class="fw-medium fs-5 mt-2">Eco Brasil</p>
+		</div>
+		<div class="col-9">
+			<p class="fw-medium fs-4 d-none d-md-block">
+				A Eco Brasil tem o orgulho de anunciar sua parceria com a EcoCycle, organização que se destaca pela aplicação de tecnologia em processos de coleta consciente de resíduos. Essa união fortalece o compromisso da nossa empresa com a inovação sustentável e com a busca constante por soluções que transformem desafios ambientais em oportunidades para gerar energia limpa e renovável.
+			</p>
+		</div>
+	</div>
 </div>
