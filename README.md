@@ -67,11 +67,6 @@ Este projeto foi desenvolvido com:
 
 ---
 
-# 💥 Veja Nosso Site Completo 🔥
-Você pode ver como ficou nosso site completo aqui!
-[EcoCycle](https://michelacre.github.io/PsyquIA/)
----
-
 ## 📋 Feedback
 
 Se você tiver algum feedback, por favor nos deixe saber!
